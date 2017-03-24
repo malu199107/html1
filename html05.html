@@ -1,271 +1,176 @@
+<!DOCTYPE html>
+<html>
 
-<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>task02</title>
-	<style>
-		*{
-			margin: 0;
-			padding: 0;
-		}
-		a{
-			text-decoration: none;
-		}
-		body{
-			background: rgb(221,221,221);
-		}
-		header,footer{
-			background: rgb(54,54,54);
-		}
-		footer{
-			text-align: center;
-		}
-		header>h1{
-			color: #fff;
-		}
-		ul{
-			list-style: none;
-		}
-		.headList{
-			float: right;
-			margin-right: 22px;
-		}
-		.headList>li{
-			float: left;
-			line-height: 45px;
-			margin-right: 6px;
-		}
-		.headList>li>a{
-			color: #fff;
-		}
-		section{
-			padding: 22px;
-		}
-		.secItem{
-			padding: 32px;
-			margin-bottom: 30px;
-			background: #fff;
-			box-shadow: 10px 10px 5px rgb(136,136,136);
-		}
-		.secItem>h2,.secItem>h3{
-			margin: 12px 0;
-		}
-		.secItem>h3{
-			color: rgb(110,107,112);
-		}
-		.secItem p{
-			text-indent: 2em;
-		}
-		.secItem>.img{
-			margin: 0 20px;
-		}
-		.secItem span{
-			color: rgb(146,146,146);
-			font-size: 12px;
-		}
-		.secItem ul{
-			margin-top: 20px;
-		}
-		.secItem .imgBox:after{
-			content: "";
-			display: block;
-			clear: both;
-		}
-		.secItem dl{
-			float: left;
-			padding: 10px;
-			border: 1px solid #ccc;
-			margin-right: 6px;
-		}
-		.secItem dl>dt{
-			margin: 10px 0 10px 10px;
-		}
-		.secItem ul>li{
-			text-align: center;
-			margin: 10px 0;
-		}
-		.secItem ul>li>h5{
-			display: inline;
-			vertical-align: top;
-		}
-		table thead{
-			background: rgb(54,54,54);
-			color: #fff;
-			text-align: center;
-			font-weight: bold;
-		}
-		table tfoot{
-			background: rgb(203,203,203);
-		}
-		table td{
-			border: 1px solid #ccc;
-		}
-		.submit{
-			width: 100%;
-			border-radius: 10px;
-			background: rgb(65,86,206);
-			color: #fff;
-			height: 40px;
-			line-height: 40px;
-		}
-		.left_Box{
-			width: 860px;
-			float: left;
-		}
-		.right_Box{
-			width: 360px;
-			float: right;
-		}
-		.clear{
-			clear:both;
-			overflow:hidden;
-			display:block;
-			height:1px;
-			position:relative;
-		}
-	</style>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="index.css" />
 </head>
+
 <body>
-	<header>
-		<ul class="headList">
-			<li><a href="">导航链接一</a></li>
-			<li><a href="">导航链接二</a></li>
-			<li><a href="">导航链接三</a></li>
-			<li><a href="">导航链接四</a></li>
-		</ul>
-		<h1>Code matters</h1>
-	</header>
-	<section class="left_Box">
-		<div class="secItem">
-			<h2>文章一级标题</h2>
-			<h3>文章二级标题</h3>
-			<span>文章作者 &nbsp; &nbsp;&nbsp; 文章发表时间</span>
-			<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，还行了</br>
-			这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com">这里有一个链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，<b>这里有个粗体字</b>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
-			<img class="img" src="image/logo.png" alt="logo" />
-			<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，还行了 <br/>
-			这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com" target="blank">这里有一个链接点击后打开新窗口链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<b>这里有个粗体字</b>这是一个很长很长的段落，这是一个很长很长的段落。</p>
-		</div>
-		<div class="secItem">
-			<h2>另外一篇文章一级标题</h2>
-			<h3>文章二级标题</h3>
-			<span>文章作者 &nbsp; &nbsp;&nbsp; 文章发表时间</span>
-			<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，还行了</br>
-			这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com">这里有一个链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，<b>这里有个粗体字</b>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
-			<img src="image/logo.png" alt="logo" />
-			<ul>
-				<li>列表项目一</li>
-				<li>列表项目二</li>
-				<li>列表项目三</li>
-			</ul>
-		</div>
-		<div class="secItem">
-			<h3>图片</h3>
-			<div class="imgBox">
-				<dl>
-					<dt>好看的图片</dt>
-					<dd><img src="image/logo.png" alt=""></dd>	
-				</dl>
-				<dl>
-					<dt>好看的图片</dt>
-					<dd><img src="image/logo.png" alt=""></dd>	
-				</dl>
-				<dl>
-					<dt>好看的图片</dt>
-					<dd><img src="image/logo.png" alt=""></dd>	
-				</dl>
-				<dl>
-					<dt>好看的图片</dt>
-					<dd><img src="image/logo.png" alt=""></dd>	
-				</dl>
-				<dl>
-					<dt>好看的图片</dt>
-					<dd><img src="image/logo.png" alt=""></dd>	
-				</dl>
-			</div>
-		</div>
-		<div class="secItem">
-			<h2>最后一篇文章一级标题</h2>
-			<h3>文章二级标题</h3>
-			<span>文章作者 &nbsp; &nbsp;&nbsp; 文章发表时间</span>
-			<ol>
-				<li>排名1</li>
-				<li>排名2</li>
-				<li>排名3</li>
-			</ol>
-			<p>下面是一个表格，给表格加了一个border="1"好让你看出来是一个表格</p>
-			<table width="100%">
-				<thead>
-					<tr>
-						<th>表头</th>
-						<th>表头</th>
-						<th>表头</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>表内容单元格</td>
-						<td>表内容单元格</td>
-						<td><a href="#">操作</a></td>
-					</tr>
-					<tr>
-						<td>表内容单元格</td>
-						<td>表内容单元格</td>
-						<td><a href="#">操作</a></td>
-					</tr>
-					<tr>
-						<td>表内容单元格</td>
-						<td>表内容单元格</td>
-						<td><a href="#">操作</a></td>
-					</tr>
-					<tr>
-						<td>表内容单元格</td>
-						<td>表内容单元格</td>
-						<td><a href="#">操作</a></td>
-					</tr>
-				</tbody>
-				<tfoot>
-					<tr>
-						<td>总计</td>
-						<td colspan="2">1000</td>	
-					</tr>
-				</tfoot>	
-			</table>
-		</div>
-		
-	</section>
-	<div class="secItem right_Box">
-			<h3>这里以后是个侧栏，这是侧栏的标题</h3>
-			<form action="">
-				<ul>
-					<li>
-						<label for="">请输入邮箱地址 </label><input type="text" value="这是一个文本输入框"><br>
-						<span>邮箱地址请按要求格式输入</span>
-					</li>
-					<li><label for="">请输入密码</label><input type="password" value="123456"></li>
-					<li><label for="">请重复输入密码</label><input type="password" value="123456"><br>
-						<span>密码请为6-16位英文数字</span>
-					</li>
-					<li>
-						<h5>性别</h5>
-						<input type="radio">男
-						<input type="radio">女
-					</li>
-					<li>
-						<h5>城市</h5>
-						<select name="" id="">
-							<option value="">北京</option>
-						</select>
-					</li>
-					<li>
-						<h5>个人描述</h5>
-						<textarea name="" id="" cols="100" rows="10" width="100" height="100">这是一个多行输入框，输入您的个人描述</textarea>
-					</li>
-				</ul>
-				<button class="submit">确定提交</button>
-			</form>
-		</div>
-		<div class="clear"></div>
-	<footer>版权所有&copy; made by pkjy TEAM CM</footer>
+    <header>
+        <img src="logo.png" id="logo" />
+        <span>
+            <ul id="head-link">
+                <li><a href="#">导航链接一</a></li>
+                <li><a href="#">导航链接二</a></li>
+                <li><a href="#">导航链接三</a></li>
+                <li><a href="#">导航链接四</a></li>
+            </ul>
+        </span>
+    </header>
+
+
+
+    <aside>
+        <h3>侧栏标题</h3>
+        <form>
+            <span class="descrip">请输入邮箱地址</span>
+            <input type="text" name="email" placeholder="这是一个文本输入框">
+            <p class="note">邮箱地址请按要求格式输入</p>
+
+            <span class="descrip">请输入密码</span>
+            <input type="password" name="password" placeholder="这是一个密码输入框">
+            <br>
+            <span class="descrip">请重复输入密码</span>
+            <input type="password" name="password2" placeholder="这是一个密码输入框">
+            <p class="note">密码请为6-16位英文数字</p>
+
+            <span class="descrip">性别</span>
+            <input type="radio" checked="checked" name="sex" id="male"><label for="male">男</label>
+            <input type="radio" name="sex" id="female"><label for="female">女</label>
+            <br>
+
+            <span class="descrip">城市</span>
+            <select name="city">
+                        <option value="beijing" selected="selected">北京</option>
+                        <option value="shanghai">上海</option>
+                        <option value="guangzhou">广州</option>
+                    </select>
+
+            <br>
+
+            <span class="descrip">爱好</span>
+            <input type="checkbox" name="sport" id="sport"><label for="sport">运动</label>
+            <input type="checkbox" name="artist" id="artist"><label for="artist">艺术</label>
+            <input type="checkbox" name="science" id="science"><label for="science">科学</label>
+
+            <br>
+            <span class="descrip">个人描述</span>
+            <textarea rows="3"  placeholder="这是一个多行输入框，输入您的个人描述"></textarea>
+
+            <input class="submit" type="submit" value="确认提交">
+
+        </form>
+    </aside>
+
+    <main>
+        <article>
+            <h2>文章一级标题</h2>
+            <h3>文章二级标题</h3>
+            <p>
+                惠州，位于广东省中南部东江之滨，珠江三角洲东北端，南临南海大亚湾，毗邻深圳、香港，北连河源市，东接汕尾市，西邻东莞市和广州市，是珠江三角洲地区中心城市之一。辖惠城区、惠阳区、惠东县、博罗县、龙门县等2区3县，并设有两个国家级开发区：大亚湾经济技术开发区、仲恺高新技术产业开发区，属
+                <a href="#">珠三角经济区</a>。
+            </p>
+            <img src="https://imgsa.baidu.com/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=575a85490f2442a7ba03f5f7b02ac62e/6159252dd42a2834fd9089c15bb5c9ea14cebfc2.jpg"
+                class="bigph" />
+            <p>
+                惠州是国家历史文化名城，在隋唐已是“粤东重镇”，一直是东江流域政治、经济、军事、文化中心和商品集散地，素有“岭南名郡”、“粤东门户”、“半城山色半城湖”之誉。
+            </p>
+        </article>
+        <article>
+            <h2>文章一级标题</h2>
+            <h3>文章二级标题</h3>
+            <p>
+                惠州是客家人的重要聚居地和集散地之一，旅居海外华人华侨、港澳台同胞居客家四州之首，被称为客家侨都。 从唐到清末1000多年间，有430多位中国名人客寓或履临惠州，留下了96处遗址和2100多件文物。孕育了叶挺、廖仲恺、邓演达、叶亚来等杰出人士；惠州是中国近代抗争史的前沿阵地，曾建立华南抗日战争的主力部队—东江纵队。
+            </p>
+            <img src="https://imgsa.baidu.com/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=575a85490f2442a7ba03f5f7b02ac62e/6159252dd42a2834fd9089c15bb5c9ea14cebfc2.jpg"
+                class="bigph" />
+            <ul>
+                <li>列表项目一</li>
+                <li>列表项目二</li>
+                <li>列表项目三</li>
+            </ul>
+
+        </article>
+        <article class="figures">
+            <h2>图片</h2>
+            <figure>
+                <figcaption>好看的图片</figcaption>
+                <img src="https://imgsa.baidu.com/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=575a85490f2442a7ba03f5f7b02ac62e/6159252dd42a2834fd9089c15bb5c9ea14cebfc2.jpg">
+            </figure><figure>
+                <figcaption>好看的图片</figcaption>
+                <img src="https://imgsa.baidu.com/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=575a85490f2442a7ba03f5f7b02ac62e/6159252dd42a2834fd9089c15bb5c9ea14cebfc2.jpg">
+            </figure><figure>
+                <figcaption>好看的图片</figcaption>
+                <img src="https://imgsa.baidu.com/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=575a85490f2442a7ba03f5f7b02ac62e/6159252dd42a2834fd9089c15bb5c9ea14cebfc2.jpg">
+            </figure><figure>
+                <figcaption>好看的图片</figcaption>
+                <img src="https://imgsa.baidu.com/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=575a85490f2442a7ba03f5f7b02ac62e/6159252dd42a2834fd9089c15bb5c9ea14cebfc2.jpg">
+            </figure><figure>
+                <figcaption>好看的图片</figcaption>
+                <img src="https://imgsa.baidu.com/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=575a85490f2442a7ba03f5f7b02ac62e/6159252dd42a2834fd9089c15bb5c9ea14cebfc2.jpg">
+            </figure><figure>
+                <figcaption>好看的图片</figcaption>
+                <img src="https://imgsa.baidu.com/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=575a85490f2442a7ba03f5f7b02ac62e/6159252dd42a2834fd9089c15bb5c9ea14cebfc2.jpg">
+            </figure><figure>
+                <figcaption>好看的图片</figcaption>
+                <img src="https://imgsa.baidu.com/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=575a85490f2442a7ba03f5f7b02ac62e/6159252dd42a2834fd9089c15bb5c9ea14cebfc2.jpg">
+            </figure><figure>
+                <figcaption>好看的图片</figcaption>
+                <img src="https://imgsa.baidu.com/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=575a85490f2442a7ba03f5f7b02ac62e/6159252dd42a2834fd9089c15bb5c9ea14cebfc2.jpg">
+            </figure><figure>
+                <figcaption>好看的图片</figcaption>
+                <img src="https://imgsa.baidu.com/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=575a85490f2442a7ba03f5f7b02ac62e/6159252dd42a2834fd9089c15bb5c9ea14cebfc2.jpg">
+            </figure>
+        </article>
+
+
+        <article>
+            <h2>文章一级标题</h2>
+            <h3>文章二级标题</h3>
+            <h4>作者 发表时间</h4>
+            <ol>
+                <li>排名1</li>
+                <li>排名2</li>
+                <li>排名3</li>
+            </ol>
+            下面是一个表格
+            <table>
+                <tr>
+                    <th>表头</th>
+                    <th>表头</th>
+                    <th>表头</th>
+                </tr>
+                <tr>
+                    <td>表内容单元格</td>
+                    <td>表内容单元格</td>
+                    <td><a href- "#">操作</a></td>
+                </tr>
+                <tr>
+                    <td>表内容单元格</td>
+                    <td>表内容单元格</td>
+                    <td><a href- "#">操作</a></td>
+                </tr>
+                <tr>
+                    <td>表内容单元格</td>
+                    <td>表内容单元格</td>
+                    <td><a href- "#">操作</a></td>
+                </tr>
+                <tr>
+                    <td>表内容单元格</td>
+                    <td>表内容单元格</td>
+                    <td><a href- "#">操作</a></td>
+                </tr>
+                <tr>
+                    <td>总计</td>
+                    <td colspan="2">1000</td>
+                </tr>
+            </table>
+        </article>
+    </main>
+    <footer>
+        版权所有©
+    </footer>
 </body>
+
 </html>
