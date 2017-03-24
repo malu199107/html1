@@ -108,6 +108,21 @@
 			height: 40px;
 			line-height: 40px;
 		}
+		.left_Box{
+			width: 860px;
+			float: left;
+		}
+		.right_Box{
+			width: 360px;
+			float: right;
+		}
+		.clear{
+			clear:both;
+			overflow:hidden;
+			display:block;
+			height:1px;
+			position:relative;
+		}
 	</style>
 </head>
 <body>
@@ -120,7 +135,7 @@
 		</ul>
 		<h1>Code matters</h1>
 	</header>
-	<section>
+	<section class="left_Box">
 		<div class="secItem">
 			<h2>文章一级标题</h2>
 			<h3>文章二级标题</h3>
@@ -217,7 +232,9 @@
 				</tfoot>	
 			</table>
 		</div>
-		<div class="secItem">
+		
+	</section>
+	<div class="secItem right_Box">
 			<h3>这里以后是个侧栏，这是侧栏的标题</h3>
 			<form action="">
 				<ul>
@@ -242,13 +259,13 @@
 					</li>
 					<li>
 						<h5>个人描述</h5>
-						<textarea name="" id="" cols="100" rows="10">这是一个多行输入框，输入您的个人描述</textarea>
+						<textarea name="" id="" cols="100" rows="10" width="100" height="100">这是一个多行输入框，输入您的个人描述</textarea>
 					</li>
 				</ul>
 				<button class="submit">确定提交</button>
 			</form>
 		</div>
-	</section>
+		<div class="clear"></div>
 	<footer>版权所有&copy; made by pkjy TEAM CM</footer>
 </body>
 </html>
